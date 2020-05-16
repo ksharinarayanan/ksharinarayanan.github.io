@@ -1,1 +1,92 @@
-hello there
+<!--
+---
+layout: home
+title: Think !
+---
+
+
+	<header id="header" class="alt">
+		<a href="#nav">Menu</a>
+	</header>
+
+	<nav id="nav">
+		<ul class="links">
+			<li><a href="/">Home</a></li>
+			<li><a href="generic.html">Generic</a></li>
+			<li><a href="elements.html">Elements</a></li>
+		</ul>
+	</nav>
+	<section id="banner">
+		<i class="icon fa-diamond"></i>
+		<h2>Michaelben's blog</h2>
+		<p>Hack for good !</p>
+		<ul class="actions">
+			<li><a href="#" class="button big special">Learn More</a></li>
+		</ul>
+	</section>
+	<section id="one" class="wrapper style1">
+		<div class="inner">
+{% for post in site.posts %}
+		    <article class="feature left">
+				<span class="image"><img src="{{ post.image }}" alt="" /></span>
+				<div class="content">
+					<h2>{{ post.title }}</h2>
+					<p>{{ post.description }}</p>
+					<ul class="actions">
+						<li>
+							<a href="{{ post.url }}" class="button alt">More</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+{% endfor %}	
+		</div>
+	</section>
+-->
+
+<!-- Temporary section -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Micha3lb3n</title>
+	<style>
+		body, html {
+		  height: 100%;
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		.image{
+			height: 100%;
+			background-image: url('/assets/images/hacker.jpg');
+			filter: blur(50px);
+			-webkit-filter: blur(50px);
+
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#text{
+			color: white;
+		  	font-weight: bold;
+			position: absolute;
+		  	top: 50%;
+		  	left: 50%;
+		  	transform: translate(-50%, -50%);
+		  	z-index: 2;
+		  	width: 80%;
+		  	padding: 20px;
+		 	text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="image"></div>
+	<div id="text">
+		<h1>Stay tun3d !</h1>
+		<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~Micha3lb3n</h3>
+	</div>
+	
+</body>
+</html>
