@@ -1,8 +1,32 @@
-<!--
 ---
-layout: home
-title: Think !
+layout: home 
+title: TBD
 ---
+
+	<style>
+		html {
+		scroll-behavior: smooth;
+		}
+		.pagination a, .pagination span {
+			padding: 7px 18px;
+			border: 1px solid #eee;
+			margin-left: -2px;
+			margin-right: -2px;
+			background-color: #ffffff;
+			display: inline-block;
+		}
+
+		.pagination a {    
+			&:hover {
+				background-color: #f1f1f1;
+				color: #333;
+			}
+		}
+
+		.pagination {
+			text-align: center;
+		}
+	</style>
 
 
 	<header id="header" class="alt">
@@ -12,81 +36,63 @@ title: Think !
 	<nav id="nav">
 		<ul class="links">
 			<li><a href="/">Home</a></li>
-			<li><a href="generic.html">Generic</a></li>
-			<li><a href="elements.html">Elements</a></li>
 		</ul>
 	</nav>
+
+
 	<section id="banner">
 		<i class="icon fa-diamond"></i>
 		<h2>Michaelben's blog</h2>
 		<p>Hack for good !</p>
+		
 		<ul class="actions">
-			<li><a href="#" class="button big special">Learn More</a></li>
+			<li><a href="#one" class="button big special">Psst...Read below</a></li>
 		</ul>
+
 	</section>
+
 	<section id="one" class="wrapper style1">
-		<div class="inner">
-{% for post in site.posts %}
-		    <article class="feature left">
-				<span class="image"><img src="{{ post.image }}" alt="" /></span>
-				<div class="content">
-					<h2>{{ post.title }}</h2>
-					<p>{{ post.description }}</p>
-					<ul class="actions">
-						<li>
-							<a href="{{ post.url }}" class="button alt">More</a>
-						</li>
-					</ul>
-				</div>
-			</article>
-{% endfor %}	
+		<div class="inner" id="inner">
+			{% for post in paginator.posts %}			
+				<article class="feature right">
+					<span class="image"><img src="{{ post.image }}" alt="" /></span>
+					<div class="content">
+						<h2>{{ post.title }}</h2>
+						<p>{{ post.description }}</p>
+						<ul class="actions">
+							<li>
+								<a href="{{ post.url }}" class="button alt">More</a>
+							</li>
+						</ul>
+					</div>
+				</article>				
+			{% endfor %}	
 		</div>
+		{% if paginator.total_pages > 1 %}
+			<div class="pagination">
+				{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+				{% else %}
+					<span>&laquo; Prev</span>
+				{% endif %}
+
+				{% for page in (1..paginator.total_pages) %}
+					{% if page == paginator.page %}
+						<span class="webjeda">{{ page }}</span>
+					{% elsif page == 1 %}
+						<a href="/">{{ page }}</a>
+					{% else %}
+						<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+					{% endif %}
+				{% endfor %}
+
+				{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+				{% else %}
+					<span>Next &raquo;</span>
+				{% endif %}
+			</div>
+		{% endif %}
 	</section>
--->
 
-<!-- Temporary section -->
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Micha3lb3n</title>
-	<style>
-		body, html {
-		  height: 100%;
-		  margin: 0;
-		  font-family: Arial, Helvetica, sans-serif;
-		}
-		.image{
-			height: 100%;
-			background-image: url('/assets/images/banner.jpg');
-			filter: blur(50px);
-			-webkit-filter: blur(0px);
-
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-
-		#text{
-			color: white;
-		  	font-weight: bold;
-			position: absolute;
-		  	top: 10%;
-		  	left: 50%;
-		  	transform: translate(-50%, -50%);
-		  	z-index: 2;
-		  	width: 80%;
-		  	padding: 20px;
-		 	text-align: center;
-		}
-	</style>
-</head>
-<body>
-	<div class="image"></div>
-	<div id="text">
-		<h1>Stay tun3d !</h1>
-		<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~Micha3lb3n</h3>
-	</div>
 	
-</body>
-</html>
