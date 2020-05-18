@@ -61,7 +61,7 @@ image: /assets/images/stored_xss.png
 
                 As the company was a startup, they did not realize the impact of stored XSS, so took down my whole profile page using javsscript, and altered it so that it showed whatever content I wanted. There was another critical possibility of stealing cookies leading to account takeover, but that wasn't going to reflect it's impact immediately to a non-security person. I wanted to show something that immediately catches their attention.
             </p>
-            <center><span class=""><img src="{{ page.image }}" alt="" height="400px" width="700px" /></span></center>
+            <center><span class=""><img src="{{ page.image }}" alt="" height="30%" width="80%" /></span></center>
             <br><br>
             <p style="font-size: 20px;">
                 If you are into this kind of stuff, you probably know the excitement, when an alert box pops up and that too for the first time. I don't know whether this is strange or whatever, but I like it more with a firefox alert box, than a chromium one ;)
