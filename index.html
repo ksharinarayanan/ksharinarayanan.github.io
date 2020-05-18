@@ -57,7 +57,7 @@ title: Micha3lb3n's blog
 	<section id="bugs" class="wrapper style1">
 		<div class="inner" id="inner">
 			{% for post in paginator.posts %}			
-				<article class="feature right">
+				<article class="feature right" onclick="window.document.location='{{ post.url }}'" style="cursor: pointer;">
 					<span class="image"><img src="{{ post.image }}" alt="" /></span>
 					<div class="content">
 						<h2 style="font-size: 30px;">{{ post.title }}</h2>
