@@ -31,7 +31,7 @@ image: /assets/images/stored_xss.png
         
     <article class="feature left" style="background-color: white; color: black;">
         <center style="padding-bottom: 20px;">
-            <h2 style="padding: 20px; color: black;"><b>Blog header</b></h2>
+            <h2 style="padding: 20px; color: black;"><b>{{ page.title }}</b></h2>
             <div style="color:#0067a3">
               {{ page.date_only }}
               <br />
