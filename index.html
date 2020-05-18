@@ -1,5 +1,5 @@
 ---
-layout: home 
+layout: default 
 title: TBD
 ---
 
@@ -49,7 +49,7 @@ title: TBD
 		<p>Hack for good !</p>
 		
 		<ul class="actions">
-			<li><a href="#one" class="button big special">No hurries, stay tuned</a></li>
+			<li><a href="#one" class="button big special">Psst..read below !</a></li>
 		</ul>
 
 	</section>
@@ -60,7 +60,13 @@ title: TBD
 				<article class="feature right">
 					<span class="image"><img src="{{ post.image }}" alt="" /></span>
 					<div class="content">
-						<h2>{{ post.title }}</h2>
+						<h2 style="font-size: 30px;">{{ post.title }}</h2>
+						<div style="color:#0067a3;">
+							{{ post.date_only }}
+							<br />
+							~{{ post.reading_time }}
+						</div>
+						<br>
 						<p>{{ post.description }}</p>
 						<ul class="actions">
 							<li>
@@ -97,5 +103,5 @@ title: TBD
 			</div>
 		{% endif %}
 	</section>
-
+	
 	
