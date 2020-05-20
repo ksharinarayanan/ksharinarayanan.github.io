@@ -67,8 +67,8 @@ image: /assets/images/stored_xss.png
                 If you are into this kind of stuff, you probably know the excitement, when an alert box pops up and that too for the first time. I don't know whether this is strange or whatever, but I like it more with a firefox alert box, than a chromium one ;)
             </p>
         </div>
-        Share: <a class="icon fa-twitter"
-      href="https://twitter.com/intent/tweet?text=https://micha3lb3n.github.io{{ page.permalink }}" data-size="large" url="https://micha3lb3n.github.io/">
+        Share: <a class="icon fa-twitter" target="_blank"
+      href="https://twitter.com/intent/tweet?text=Check out {{ page.title }} by micha3lb3n at https://micha3lb3n.github.io{{ page.permalink }}" data-size="large" url="https://micha3lb3n.github.io/">
     Tweet</a>
     </article>
   </div>
