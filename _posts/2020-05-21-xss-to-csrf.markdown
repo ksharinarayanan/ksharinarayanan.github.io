@@ -101,3 +101,8 @@ image: /assets/images/stored-xss-to-csrf/poc.png
                 <br>
                 See you again in the next blog post :)
             </p>
+        </div>
+        Share: <a class="icon fa-twitter" target="_blank"
+      href="https://twitter.com/intent/tweet?text=Check out {{ page.title }} by micha3lb3n at https://micha3lb3n.github.io{{ page.permalink }}" data-size="large" url="https://micha3lb3n.github.io/">
+    Tweet</a>
+    </article>
