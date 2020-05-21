@@ -4,7 +4,6 @@ title: My first bug !
 description: Get to know how I found my first bug, and took over a whole page completely.
 date:   2020-05-17 16:11:05 +0530
 date_only: May 18, 2020
-categories: jekyll update
 permalink: /my-first-bug/
 reading_time: 4 minutes
 image: /assets/images/stored_xss.png
