@@ -76,7 +76,7 @@ image: /assets/images/sourcewolf.jpg
 
                 <br><br>
 
-                This is where my friend <a href="https://github.com/micha3l3bn/SourceWolf/">SourceWolf</a> comes in. He is ready to do all the hard word for you. You just need to provide the list of URLs, and he crawls the responses for you to find all the endpoints.
+                This is where my friend <a href="https://github.com/micha3lb3n/SourceWolf/">SourceWolf</a> comes in. He is ready to do all the hard word for you. You just need to provide the list of URLs, and he crawls the responses for you to find all the endpoints.
                 <br><br>
                 He currently only searches for endpoints in the files, but you can expect in the future that he will be adding more tricks up his sleeve like creating a custom wordlist for a specific target based on the words obtained from the source, and flagging secret api keys leaked in the source.
 
