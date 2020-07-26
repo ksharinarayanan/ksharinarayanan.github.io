@@ -1,72 +1,86 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="icon" href="/assets/images/ben_10.jpg" type="image/gif" sizes="16x16" class="img-circle">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script data-ad-client="ca-pub-5774929704937330" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <head>
+        <link
+            rel="icon"
+            href="/assets/images/ben_10.jpg"
+            type="image/gif"
+            sizes="16x16"
+            class="img-circle"
+        />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166915800-1"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-166915800-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-		gtag('config', 'UA-166915800-1');
-		</script>
+            gtag("config", "UA-166915800-1");
+        </script>
 
-		<style>
-			html {
-				scroll-behavior: smooth;
-			}
-		</style>
-		
-	</head>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
 
-	<body class="landing" style="background-color: #EEE;">
+    <body class="landing" style="background-color: #eee;">
+        <header id="header" class="alt">
+            <a href="#nav" style="color: black;">Menu</a>
+        </header>
 
-		<header id="header" class="alt">
-			<a href="#nav" style="color: black">Menu</a>
-		</header>
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
 
-		<nav id="nav">
-			<ul class="links">
-				<li><a href="/">Home</a></li>
-				<li><a href="#footer">Contact</a></li>
-			</ul>
-		</nav>
+        {{ content }}
 
-		{{ content }}
-	
+        <br /><br />
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li>
+                        <a
+                            href="https://github.com/micha3lb3n"
+                            target="_blank"
+                            class="icon fa-github"
+                        >
+                            <span class="label">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.twitter.com/micha3lb3n"
+                            target="_blank"
+                            class="icon fa-twitter"
+                        >
+                            <span class="label">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li><b>&copy; 2020 Michaelben</b></li>
+                </ul>
+            </div>
+        </footer>
 
-		<br><br>
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://github.com/micha3lb3n" target="_blank" class="icon fa-github">
-						<span class="label">Github</span>
-					</a></li>
-					<li><a href="https://www.twitter.com/micha3lb3n" target="_blank" class="icon fa-twitter">
-						<span class="label">Twitter</span>
-					</a></li>
-					<li><a href="mailto:micha3lb3n@gmail.com" target="_blank" class="icon fa-google">
-						<span class="label">Twitter</span>
-					</a></li>
-				</ul>
-				<ul class="copyright">
-					<li><b>&copy; 2020 Michaelben</b></li>
-				</ul>
-			</div>
-		</footer>
-
-
-		<script src="/assets/js/jquery.min.js"></script>
-		<script src="/assets/js/skel.min.js"></script>
-		<script src="/assets/js/util.js"></script>
-		<script src="/assets/js/main.js"></script>
-</body>
-
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/skel.min.js"></script>
+        <script src="/assets/js/util.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </body>
 </html>

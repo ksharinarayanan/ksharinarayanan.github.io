@@ -21,6 +21,7 @@ image: /assets/images/stored-xss-to-csrf/poc.png
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
 
   <title>{{ page.title }}</title>
   <style>
@@ -33,7 +34,7 @@ image: /assets/images/stored-xss-to-csrf/poc.png
 
 <section id="one" class="wrapper style1">
   <div class="inner">
-        
+    
     <article class="feature left" style="background-color: white; color: black;">
         <center style="padding-bottom: 20px;">
             <h2 style="padding: 20px; color: black;"><b>{{ page.title }}</b></h2>
@@ -106,4 +107,5 @@ image: /assets/images/stored-xss-to-csrf/poc.png
       href="https://twitter.com/intent/tweet?text=Check out {{ page.title }} by micha3lb3n at https://micha3lb3n.github.io{{ page.permalink }}" data-size="large" url="https://micha3lb3n.github.io/">
     Tweet</a>
         <br /><br />
+        
     </article>
