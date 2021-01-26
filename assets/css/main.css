@@ -4209,6 +4209,9 @@ body.landing {
     #banner {
         padding: 11em 0 9em 0;
     }
+    #banner h2 {
+        font-size: 35px
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -4217,7 +4220,7 @@ body.landing {
     }
 
     #banner h2 {
-        font-size: 2em;
+        font-size: 35px
     }
 }
 
@@ -4233,7 +4236,7 @@ body.landing {
     }
 
     #banner h2 {
-        font-size: 1.5em;
+        font-size: 3em;
     }
 
     #banner p {
@@ -4251,6 +4254,10 @@ body.landing {
     }
 
     #banner .icon {
+        font-size: 1.5em;
+    }
+
+    #banner h2 {
         font-size: 1.5em;
     }
 }
