@@ -76,19 +76,17 @@ image: /assets/images/sourcewolf.jpg
 
                 <br><br>
 
-                This is where my friend <a href="https://github.com/micha3lb3n/SourceWolf/">SourceWolf</a> comes in. He is ready to do all the hard word for you. You just need to provide the list of URLs, and he crawls the responses for you to find all the endpoints.
+                This is where my tool <a href="https://github.com/micha3lb3n/SourceWolf/">SourceWolf</a> comes in. It does all the hard work for you. You just need to provide the list of URLs, and it crawls the responses for you to find all the endpoints.
                 <br><br>
-                He currently only searches for endpoints in the files, but you can expect in the future that he will be adding more tricks up his sleeve like creating a custom wordlist for a specific target based on the words obtained from the source, and flagging secret api keys leaked in the source.
+                It currently only searches for endpoints in the files, fuzz endpoints and grab all the social media links in the page to find out potential broken links , but you can expect in the future that he will be adding more tricks up his sleeve like creating a custom wordlist for a specific target based on the words obtained from the source, and flagging secret api keys leaked in the source.
 
                 <br><br>
-
-                He lives <a href="https://github.com/micha3lb3n/SourceWolf/">here</a>. Do pay him a visit. He's feeling lonely out there!
 
                 It can also serve as a endpoint bruteforcer and something that can get you the status codes of a list of URLs really fast. For more detailed information, check out the docs!
 
                 <br><br>
 
-                An amazing feature which SourceWolf has is, it automatically checks for updates right from the terminal everytime he is run, and he notifies the user along with <b>any bug fixes and new features</b> added to the new version. You can also update SourceWolf directly from the terminal without the need for you to go the repo for you to clone it back again every time you want to update.
+                An amazing feature which SourceWolf has is, it automatically checks for updates right from the terminal everytime it is run, and it notifies the user of a newer version along with <b>any bug fixes and new features</b> added to the new version. You can also update SourceWolf directly from the terminal without the need for you to go the repo for you to clone it back again every time you want to update.
 
                 <br><br>
 
